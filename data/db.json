@@ -1,0 +1,372 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Modern Sofa",
+      "category": "Sofa",
+      "price": 24999,
+      "image": "sofa_modern.jpg",
+      "description": "Modern Sofa designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "2",
+      "name": "L Shape Sofa",
+      "category": "Sofa",
+      "price": 45999,
+      "image": "sofa_lshape.jpg",
+      "description": "L Shape Sofa designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "3",
+      "name": "Three Seater Sofa",
+      "category": "Sofa",
+      "price": 18999,
+      "image": "sofa_three_seater.jpg",
+      "description": "Three Seater Sofa designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "4",
+      "name": "Velvet Sofa",
+      "category": "Sofa",
+      "price": 32999,
+      "image": "sofa_velvet.jpg",
+      "description": "Velvet Sofa designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "5",
+      "name": "Recliner Sofa",
+      "category": "Sofa",
+      "price": 27999,
+      "image": "sofa_recliner.jpg",
+      "description": "Recliner Sofa designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "6",
+      "name": "Accent Chair",
+      "category": "Chair",
+      "price": 8999,
+      "image": "accent_chair.jpg",
+      "description": "Accent Chair designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "7",
+      "name": "Dining Chair",
+      "category": "Chair",
+      "price": 7499,
+      "image": "dining_chair.jpg",
+      "description": "Dining Chair designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "8",
+      "name": "Rocking Chair",
+      "category": "Chair",
+      "price": 12999,
+      "image": "rocking_chair.jpg",
+      "description": "Rocking Chair designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "9",
+      "name": "Office Chair",
+      "category": "Chair",
+      "price": 15999,
+      "image": "office_chair.jpg",
+      "description": "Office Chair designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "10",
+      "name": "Lounge Chair",
+      "category": "Chair",
+      "price": 10999,
+      "image": "lounge_chair.jpg",
+      "description": "Lounge Chair designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "11",
+      "name": "Coffee Table",
+      "category": "Table",
+      "price": 7999,
+      "image": "coffee_table.jpg",
+      "description": "Coffee Table designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "12",
+      "name": "Dining Table",
+      "category": "Table",
+      "price": 18999,
+      "image": "dining_table.jpg",
+      "description": "Dining Table designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "13",
+      "name": "Side Table",
+      "category": "Table",
+      "price": 5499,
+      "image": "side_table.jpg",
+      "description": "Side Table designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "14",
+      "name": "Console Table",
+      "category": "Table",
+      "price": 14999,
+      "image": "console_table.jpg",
+      "description": "Console Table designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "15",
+      "name": "Study Table",
+      "category": "Table",
+      "price": 11999,
+      "image": "study_table.jpg",
+      "description": "Study Table designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "16",
+      "name": "King Bed",
+      "category": "Bed",
+      "price": 39999,
+      "image": "king_bed.jpg",
+      "description": "King Bed designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "17",
+      "name": "Queen Bed",
+      "category": "Bed",
+      "price": 34999,
+      "image": "queen_bed.jpg",
+      "description": "Queen Bed designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "18",
+      "name": "Storage Bed",
+      "category": "Bed",
+      "price": 42999,
+      "image": "storage_bed.jpg",
+      "description": "Storage Bed designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "19",
+      "name": "Wooden Bed",
+      "category": "Bed",
+      "price": 29999,
+      "image": "wooden_bed.jpg",
+      "description": "Wooden Bed designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "20",
+      "name": "Canopy Bed",
+      "category": "Bed",
+      "price": 49999,
+      "image": "canopy_bed.jpg",
+      "description": "Canopy Bed designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "21",
+      "name": "Two Door Wardrobe",
+      "category": "Wardrobe",
+      "price": 22999,
+      "image": "wardrobe_two_door.jpg",
+      "description": "Two Door Wardrobe designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "22",
+      "name": "Three Door Wardrobe",
+      "category": "Wardrobe",
+      "price": 28999,
+      "image": "wardrobe_three_door.jpg",
+      "description": "Three Door Wardrobe designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "23",
+      "name": "Sliding Wardrobe",
+      "category": "Wardrobe",
+      "price": 37999,
+      "image": "sliding_wardrobe.jpg",
+      "description": "Sliding Wardrobe designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "24",
+      "name": "Mirror Wardrobe",
+      "category": "Wardrobe",
+      "price": 26999,
+      "image": "mirror_wardrobe.jpg",
+      "description": "Mirror Wardrobe designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "25",
+      "name": "Bookshelf",
+      "category": "Storage",
+      "price": 11999,
+      "image": "bookshelf.jpg",
+      "description": "Bookshelf designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "26",
+      "name": "Shoe Rack",
+      "category": "Storage",
+      "price": 6999,
+      "image": "shoe_rack.jpg",
+      "description": "Shoe Rack designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "27",
+      "name": "TV Unit",
+      "category": "Storage",
+      "price": 17999,
+      "image": "tv_unit.jpg",
+      "description": "TV Unit designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "28",
+      "name": "Sideboard",
+      "category": "Storage",
+      "price": 24999,
+      "image": "sideboard.jpg",
+      "description": "Sideboard designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "29",
+      "name": "Display Cabinet",
+      "category": "Storage",
+      "price": 31999,
+      "image": "display_cabinet.jpg",
+      "description": "Display Cabinet designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "30",
+      "name": "Dresser",
+      "category": "Storage",
+      "price": 20999,
+      "image": "dresser.jpg",
+      "description": "Dresser designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "31",
+      "name": "Nightstand",
+      "category": "Storage",
+      "price": 6499,
+      "image": "nightstand.jpg",
+      "description": "Nightstand designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "32",
+      "name": "Bar Cabinet",
+      "category": "Storage",
+      "price": 22999,
+      "image": "bar_cabinet.jpg",
+      "description": "Bar Cabinet designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "33",
+      "name": "Single Recliner",
+      "category": "Chair",
+      "price": 19999,
+      "image": "recliner.jpg",
+      "description": "Single Recliner designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "34",
+      "name": "Ottoman",
+      "category": "Chair",
+      "price": 8999,
+      "image": "ottoman.jpg",
+      "description": "Ottoman designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "35",
+      "name": "Entryway Bench",
+      "category": "Chair",
+      "price": 7499,
+      "image": "bench.jpg",
+      "description": "Entryway Bench designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "36",
+      "name": "Bunk Bed",
+      "category": "Bed",
+      "price": 28999,
+      "image": "bunk_bed.jpg",
+      "description": "Bunk Bed designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "37",
+      "name": "Dressing Table",
+      "category": "Table",
+      "price": 13999,
+      "image": "dressing_table.jpg",
+      "description": "Dressing Table designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "38",
+      "name": "Nesting Tables",
+      "category": "Table",
+      "price": 9999,
+      "image": "nesting_tables.jpg",
+      "description": "Nesting Tables designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "39",
+      "name": "Patio Chair",
+      "category": "Chair",
+      "price": 8499,
+      "image": "patio_chair.jpg",
+      "description": "Patio Chair designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "40",
+      "name": "Patio Table",
+      "category": "Table",
+      "price": 12999,
+      "image": "patio_table.jpg",
+      "description": "Patio Table designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "41",
+      "name": "Rocking Recliner",
+      "category": "Chair",
+      "price": 18999,
+      "image": "rocking_recliner.jpg",
+      "description": "Rocking Recliner designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    },
+    {
+      "id": "42",
+      "name": "Shoe Bench",
+      "category": "Chair",
+      "price": 7999,
+      "image": "shoe_bench.jpg",
+      "description": "Shoe Bench designed with clean lines, practical comfort and a warm furniture finish. A versatile choice for modern Indian homes."
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Vignesh Admin",
+      "email": "admin@furnituremart.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Demo Customer",
+      "email": "user@furnituremart.com",
+      "password": "user123",
+      "role": "customer"
+    },
+    {
+      "name": "VigneshwarReddy",
+      "email": "Vignesh345@gmail.com",
+      "password": "Vignesh@0987",
+      "role": "customer",
+      "id": "wUE7IWMX-3A"
+    },
+    {
+      "name": "Vignesh",
+      "email": "vignesh1234@gmail.com",
+      "password": "Vignesh@1803#",
+      "role": "customer",
+      "id": "XF1OIylr9KA"
+    }
+  ],
+  "orders": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
