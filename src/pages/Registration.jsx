@@ -11,7 +11,8 @@ function Registration() {
 
   const submit = async (event) => {
     event.preventDefault();
-    if (!form.name || !form.email || !form.password || !form.confirmPassword) return setError("All fields are required.");
+    if (!form.name || !form.email || !form.password || !form.confirmPassword)
+   return setError("All fields are required.");
     if (form.password.length < 6) return setError("Password must contain at least 6 characters.");
     if (form.password !== form.confirmPassword) return setError("Passwords do not match.");
     const result = await dispatch(registerUser(form));

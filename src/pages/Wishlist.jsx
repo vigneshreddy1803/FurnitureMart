@@ -11,7 +11,7 @@ function Wishlist() {
       <p className="eyebrow">SAVED FURNITURE</p><h1>Your Wishlist</h1>
       {!items.length ? <div className="empty-state">Your wishlist is empty. <Link to="/products">Browse furniture</Link></div> :
         <div className="product-grid">{items.map((item) => <article className="product-card" key={item.id}>
-          <img src={`/src/assets/${item.image}`} alt={item.name} /><div className="product-info"><h3>{item.name}</h3><p className="price">₹{item.price.toLocaleString("en-IN")}</p>
+          <img src={`/assets/${item.image}`} alt={item.name} /><div className="product-info"><h3>{item.name}</h3><p className="price">₹{item.price.toLocaleString("en-IN")}</p>
           <button onClick={() => dispatch(addToCart(item))}>Add to Cart</button><button className="text-button" onClick={() => dispatch(removeFromWishlist(item.id))}>Remove</button></div>
         </article>)}</div>}
     </section>

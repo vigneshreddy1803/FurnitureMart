@@ -9,7 +9,7 @@ function ProductCard({ product }) {
   return (
     <article className="product-card">
       <Link to={`/products/${product.id}`}>
-        <img src={`/src/assets/${product.image}`} alt={product.name} />
+        <img src={`/assets/${product.image}`} alt={product.name} />
       </Link>
       <div className="product-info">
         <span>{product.category}</span>

@@ -17,7 +17,7 @@ function ProductDetails() {
     <section className="detail-page">
       <Link to="/products">← Back to furniture</Link>
       <div className="detail-card">
-        <img src={`/src/assets/${selected.image}`} alt={selected.name} />
+        <img src={`/assets/${selected.image}`} alt={selected.name} />
         <div>
           <p className="eyebrow">{selected.category}</p><h1>{selected.name}</h1>
           <p className="detail-price">₹{selected.price.toLocaleString("en-IN")}</p>

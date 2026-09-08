@@ -1,9 +1,45 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchOrders, changeOrderStatus } from "../../redux/slices/orderSlice";
+
+const STATUSES = ["Processing", "Shipped", "Delivered", "Cancelled"];
+
 function AdminOrders() {
-  const orders = [
-    { id: "#FM1001", customer: "Aarav", total: "₹38,500", status: "Processing" },
-    { id: "#FM1002", customer: "Meera", total: "₹22,900", status: "Shipped" },
-    { id: "#FM1003", customer: "Rahul", total: "₹61,200", status: "Delivered" }
-  ];
-  return <section className="admin-page"><p className="eyebrow">SALES</p><h1>Manage Orders</h1><div className="admin-table">{orders.map((order)=><div className="admin-row" key={order.id}><span>{order.id}</span><span>{order.customer}</span><span>{order.total}</span><span>{order.status}</span></div>)}</div></section>;
+  const dispatch = useDispatch();
+  const { items } = useSelector((state) => state.orders);
+
+  useEffect(() => { dispatch(fetchOrders()); }, [dispatch]);
+
+  return (
+    <section className="admin-page">
+      <p className="eyebrow">SALES</p>
+      <h1>Manage Orders</h1>
+      {items.length === 0 ? (
+        <p className="muted">No orders have been placed yet.</p>
+      ) : (
+        <div className="admin-table">
+          {items.slice().reverse().map((order) => (
+            <div className="admin-row admin-row-order" key={order.id}>
+              <span>#{order.id}</span>
+              <span>
+                {order.customerName}
+                <br />
+                <small>{order.customerEmail}</small>
+              </span>
+              <span>₹{Number(order.total).toLocaleString("en-IN")}</span>
+              <select
+                value={order.status}
+                onChange={(event) => dispatch(changeOrderStatus({ id: order.id, status: event.target.value }))}
+              >
+                {STATUSES.map((status) => (
+                  <option key={status} value={status}>{status}</option>
+                ))}
+              </select>
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
+  );
 }
 export default AdminOrders;

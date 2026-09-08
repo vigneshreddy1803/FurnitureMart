@@ -340,31 +340,43 @@
   "users": [
     {
       "id": "1",
-      "name": "Vignesh Admin",
-      "email": "admin@furnituremart.com",
-      "password": "admin123",
-      "role": "admin"
+      "name": "Vignesh",
+      "email": "vignesh@gmail.com",
+      "password": "Vignesh@123",
+      "role": "admin",
+      "isOnline": false,
+      "lastLogin": null,
+      "lastLogout": null
     },
     {
       "id": "2",
       "name": "Demo Customer",
       "email": "user@furnituremart.com",
       "password": "user123",
-      "role": "customer"
+      "role": "customer",
+      "isOnline": false,
+      "lastLogin": null,
+      "lastLogout": null
     },
     {
       "name": "VigneshwarReddy",
       "email": "Vignesh345@gmail.com",
       "password": "Vignesh@0987",
       "role": "customer",
-      "id": "wUE7IWMX-3A"
+      "id": "wUE7IWMX-3A",
+      "isOnline": false,
+      "lastLogin": null,
+      "lastLogout": null
     },
     {
       "name": "Vignesh",
       "email": "vignesh1234@gmail.com",
       "password": "Vignesh@1803#",
       "role": "customer",
-      "id": "XF1OIylr9KA"
+      "id": "XF1OIylr9KA",
+      "isOnline": false,
+      "lastLogin": null,
+      "lastLogout": null
     }
   ],
   "orders": [],

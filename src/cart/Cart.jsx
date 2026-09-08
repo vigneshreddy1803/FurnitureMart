@@ -13,7 +13,7 @@ function Cart() {
       {!items.length ? <div className="empty-state">Your cart is empty. <Link to="/products">Start shopping</Link></div> :
         <div className="cart-layout">
           <div>{items.map((item) => <div className="cart-item" key={item.id}>
-            <img src={`/src/assets/${item.image}`} alt={item.name} />
+            <img src={`/assets/${item.image}`} alt={item.name} />
             <div><h3>{item.name}</h3><p>₹{item.price.toLocaleString("en-IN")}</p>
               <div className="quantity"><button onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity - 1 }))}>−</button><span>{item.quantity}</span><button onClick={() => dispatch(updateQuantity({ id: item.id, quantity: item.quantity + 1 }))}>+</button></div>
               <button className="text-button" onClick={() => dispatch(removeFromCart(item.id))}>Remove</button>

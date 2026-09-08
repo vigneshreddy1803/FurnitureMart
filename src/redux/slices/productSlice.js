@@ -3,6 +3,9 @@ import { api } from "../../utils/api";
 
 export const fetchProducts = createAsyncThunk("products/fetchProducts", async () => (await api.get("/products")).data);
 export const fetchProductById = createAsyncThunk("products/fetchProductById", async (id) => (await api.get(`/products/${id}`)).data);
+export const createProduct = createAsyncThunk("products/createProduct", async (product) => (await api.post("/products", product)).data);
+export const updateProduct = createAsyncThunk("products/updateProduct", async ({ id, changes }) => (await api.patch(`/products/${id}`, changes)).data);
+export const removeProduct = createAsyncThunk("products/removeProduct", async (id) => { await api.delete(`/products/${id}`); return id; });
 
 const productSlice = createSlice({
   name: "products",
@@ -15,7 +18,13 @@ const productSlice = createSlice({
       .addCase(fetchProducts.fulfilled, (state, action) => { state.status = "success"; state.items = action.payload; })
       .addCase(fetchProducts.rejected, (state) => { state.status = "error"; })
       .addCase(fetchProductById.pending, (state) => { state.status = "loading"; })
-      .addCase(fetchProductById.fulfilled, (state, action) => { state.status = "success"; state.selected = action.payload; });
+      .addCase(fetchProductById.fulfilled, (state, action) => { state.status = "success"; state.selected = action.payload; })
+      .addCase(createProduct.fulfilled, (state, action) => { state.items.push(action.payload); })
+      .addCase(updateProduct.fulfilled, (state, action) => {
+        const idx = state.items.findIndex((p) => p.id === action.payload.id);
+        if (idx !== -1) state.items[idx] = action.payload;
+      })
+      .addCase(removeProduct.fulfilled, (state, action) => { state.items = state.items.filter((item) => item.id !== action.payload); });
   },
 });
 export const { deleteProduct } = productSlice.actions;

@@ -528,6 +528,18 @@ button {
   font-size: 12px;
 }
 
+.status-badge.online {
+  background: #e0f5e4;
+  color: #1e7d3c;
+  font-weight: 600;
+}
+
+.status-badge.offline {
+  background: #f2eee8;
+  color: #8a8078;
+  font-weight: 600;
+}
+
 /* ================= ADMIN ================= */
 
 .admin-stats {
@@ -595,6 +607,84 @@ button {
   color: #8f3328;
   padding: 8px;
   border-radius: 5px;
+}
+
+.admin-row-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-row-actions .edit-button {
+  background: #ddeadf;
+  color: #1e6b3a;
+}
+
+.admin-row-order {
+  grid-template-columns: 90px 1fr 120px 150px;
+}
+
+.admin-row-order select {
+  border: 1px solid #eee5db;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.admin-row-user {
+  grid-template-columns: 1fr 110px 130px 170px;
+}
+
+.role-tag {
+  text-transform: capitalize;
+}
+
+.admin-form {
+  background: #fff;
+  border: 1px solid #eee5db;
+  border-radius: 10px;
+  padding: 22px;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.admin-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #766c63;
+}
+
+.admin-form input,
+.admin-form select,
+.admin-form textarea {
+  border: 1px solid #eee5db;
+  border-radius: 7px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #30271f;
+}
+
+.admin-form label:has(textarea) {
+  grid-column: 1 / -1;
+}
+
+.admin-form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+}
+
+.admin-form-actions button[type="button"] {
+  background: #f1ece4;
+  color: #30271f;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
 }
 
 /* ================= OTHER ================= */
