@@ -1,5 +1,6 @@
 # 🪑 FurnitureMart
 
+**Live Demo:** [https://furnituremart1.netlify.app/](https://furnituremart1.netlify.app/)
 FurnitureMart is a modern **Furniture E-Commerce Web Application** developed using **React.js**. The application allows users to browse furniture products, register, log in, and interact with the platform.
 
 The project also includes an **Admin Dashboard** where administrators can monitor registered users, logged-in users, products, and sales-related information.
