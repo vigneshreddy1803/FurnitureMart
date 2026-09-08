@@ -1,8 +1,30 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { api } from "../../utils/api";
 
-export const fetchProducts = createAsyncThunk("products/fetchProducts", async () => (await api.get("/products")).data);
-export const fetchProductById = createAsyncThunk("products/fetchProductById", async (id) => (await api.get(`/products/${id}`)).data);
+// Fallback: fetch from static db.json when json-server is not available (e.g. Netlify)
+async function fetchFromStaticDB(resource, id) {
+  const res = await fetch("/data/db.json");
+  const db = await res.json();
+  if (id) return db[resource].find((item) => String(item.id) === String(id));
+  return db[resource];
+}
+
+export const fetchProducts = createAsyncThunk("products/fetchProducts", async () => {
+  try {
+    return (await api.get("/products")).data;
+  } catch {
+    return await fetchFromStaticDB("products");
+  }
+});
+
+export const fetchProductById = createAsyncThunk("products/fetchProductById", async (id) => {
+  try {
+    return (await api.get(`/products/${id}`)).data;
+  } catch {
+    return await fetchFromStaticDB("products", id);
+  }
+});
+
 export const createProduct = createAsyncThunk("products/createProduct", async (product) => (await api.post("/products", product)).data);
 export const updateProduct = createAsyncThunk("products/updateProduct", async ({ id, changes }) => (await api.patch(`/products/${id}`, changes)).data);
 export const removeProduct = createAsyncThunk("products/removeProduct", async (id) => { await api.delete(`/products/${id}`); return id; });
